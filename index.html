@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Cuestionario NIAS-IFAC</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<div class='container'>
+    <h1>Auditoría y Aseguramiento en NIAS-IFAC</h1>
+    <form id='quizForm'>
+        <label>Nombre: <input type='text' id='name' required></label><br><br>
+        <label>ID: <input type='text' id='id' required></label><br><br>
+
+        <h2>Cuestionario</h2>
+
+        <div class='question'>
+            <p>1. ¿Cuál es el objetivo principal de las NIAS?</p>
+            <input type='radio' name='q1' value='a'> Establecer normas para la contabilidad financiera<br>
+            <input type='radio' name='q1' value='b'> Proporcionar lineamientos para auditorías de estados financieros<br>
+            <input type='radio' name='q1' value='c'> Regular la presentación de informes fiscales<br>
+            <input type='radio' name='q1' value='d'> Ninguna de las anteriores<br>
+        </div>
+
+        <div class='question'>
+            <p>2. ¿Qué organismo emite las NIAS?</p>
+            <input type='radio' name='q2' value='a'> IASB<br>
+            <input type='radio' name='q2' value='b'> IFAC<br>
+            <input type='radio' name='q2' value='c'> FASB<br>
+            <input type='radio' name='q2' value='d'> OCDE<br>
+        </div>
+
+        <div class='question'>
+            <p>3. ¿Cuál NIAS trata sobre la responsabilidad del auditor respecto al fraude?</p>
+            <input type='radio' name='q3' value='a'> NIAS 200<br>
+            <input type='radio' name='q3' value='b'> NIAS 240<br>
+            <input type='radio' name='q3' value='c'> NIAS 315<br>
+            <input type='radio' name='q3' value='d'> NIAS 330<br>
+        </div>
+
+        <div class='question'>
+            <p>4. ¿Qué establece la NIAS 700?</p>
+            <input type='radio' name='q4' value='a'> Procedimientos para auditorías internas<br>
+            <input type='radio' name='q4' value='b'> Formación del dictamen del auditor sobre estados financieros<br>
+            <input type='radio' name='q4' value='c'> Normas para revisiones limitadas<br>
+            <input type='radio' name='q4' value='d'> Ninguna de las anteriores<br>
+        </div>
+
+        <div class='question'>
+            <p>5. ¿Cuál es el nivel de seguridad que proporciona una auditoría según NIAS?</p>
+            <input type='radio' name='q5' value='a'> Seguridad absoluta<br>
+            <input type='radio' name='q5' value='b'> Seguridad razonable<br>
+            <input type='radio' name='q5' value='c'> Seguridad limitada<br>
+            <input type='radio' name='q5' value='d'> No proporciona seguridad<br>
+        </div>
+
+        <div class='question'>
+            <p>6. ¿Qué norma trata sobre la planificación de la auditoría?</p>
+            <input type='radio' name='q6' value='a'> NIAS 210<br>
+            <input type='radio' name='q6' value='b'> NIAS 300<br>
+            <input type='radio' name='q6' value='c'> NIAS 315<br>
+            <input type='radio' name='q6' value='d'> NIAS 330<br>
+        </div>
+
+        <div class='question'>
+            <p>7. Complete: La auditoría busca proporcionar ______ razonable.</p>
+            <input type='text' name='q7'>
+        </div>
+
+        <div class='question'>
+            <p>8. Complete: El organismo que emite las NIAS es ______.</p>
+            <input type='text' name='q8'>
+        </div>
+
+        <div class='question'>
+            <p>9. Las NIAS son emitidas por IFAC. (Verdadero/Falso)</p>
+            <input type='radio' name='q9' value='verdadero'> Verdadero
+            <input type='radio' name='q9' value='falso'> Falso
+        </div>
+
+        <div class='question'>
+            <p>10. La auditoría garantiza la ausencia total de errores. (Verdadero/Falso)</p>
+            <input type='radio' name='q10' value='verdadero'> Verdadero
+            <input type='radio' name='q10' value='falso'> Falso
+        </div>
+
+        <button type='submit'>Enviar</button>
+    </form>
+
+    <canvas id='badgeCanvas' width='600' height='400' class='hidden'></canvas>
+    <a id='downloadLink' class='hidden' download='insignia.png'>Descargar Insignia</a>
+</div>
+<script src='script.js'></script>
+</body>
+</html>
